@@ -1,6 +1,6 @@
 bl_info = {
-    "name": "blendit",
-    "authon": "imaginelenses",
+    "name": "Blendit",
+    "author": "imaginelenses",
     "description": "Version control for Blender.",
     "blender": (3, 3, 0),
     "category": "Blendit"
@@ -67,7 +67,7 @@ except ModuleNotFoundError:
         subprocess.check_call(
             [executable, "-m", "pip", "install", "-U", "pip", "--no-cache-dir"])
     except subprocess.CalledProcessError as e:
-        print(f"Pip is upto data. {e}")
+        print(f"Pip is up to date. {e}")
 
     # Install Pygit2
     subprocess.check_call(
